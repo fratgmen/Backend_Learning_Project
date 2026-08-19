@@ -21,5 +21,5 @@ createdBy: {
 class AuditLogs extends mongoose.Model {
 
 }
-schema.loadClass(Users);
+schema.loadClass(AuditLogs);
 module.exports = mongoose.model("auditlogs", schema) 

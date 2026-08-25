@@ -7,8 +7,7 @@ const schema = mongoose.Schema({
     },
     permission: {type: String},
     createdBy: {
-        type: mongoose.SchemaTypes.ObjectId,
-        required: true
+        type: mongoose.SchemaTypes.ObjectId
     },
 },
     {
@@ -19,5 +18,5 @@ const schema = mongoose.Schema({
 class RolesPrivileges extends mongoose.Model {
 
 }
-schema.loadClass(Users);
+schema.loadClass(RolesPrivileges);
 module.exports = mongoose.model("rolesprivileges", schema) 
